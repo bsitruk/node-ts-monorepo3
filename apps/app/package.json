@@ -1,0 +1,16 @@
+{
+  "name": "@node-ts-monorepo/app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-transform-types ./src/index.ts",
+    "dev": "node --watch --experimental-transform-types ./src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@node-ts-monorepo/shared-lib": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
